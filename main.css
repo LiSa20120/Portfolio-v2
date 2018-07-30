@@ -1,0 +1,92 @@
+style
+{
+    box-sizing: border-box;
+}
+
+body {
+    background-color:black;
+    padding: 20px;
+    font-family: Arial;
+    background-image:url("images/background.jpg");
+    background-repeat:no-repeat;
+    background-size: auto;
+    color:rgb(173, 172, 172);
+    
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+
+a
+{
+text-decoration: none;
+color:rgb(173, 172, 172);
+}
+a:hover{
+    color:blue;
+}
+
+#text-container {
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.link {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(252, 252, 252);
+}
+
+#row{
+    text-align:left;
+}
